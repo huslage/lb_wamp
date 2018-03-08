@@ -1,6 +1,6 @@
 ---
 ## This playbook deploys the whole application stack in this site.
-
+#
 # Configure and deploy database servers.
 - hosts: tag_ansible_group_windows_dbservers
   connection: winrm
