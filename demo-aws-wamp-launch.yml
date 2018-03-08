@@ -1,12 +1,12 @@
 ---
-#Provision some instances:
+#Provision some instances
 - hosts: localhost
   connection: local
   gather_facts: False
 
   vars_files:
   - group_vars/all
- 
+
   tasks:
   - name: Launch webserver instances
     ec2: >
@@ -50,4 +50,3 @@
     tags:
       - web
       - db
-

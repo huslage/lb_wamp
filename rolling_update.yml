@@ -1,7 +1,7 @@
 ---
 # This playbook does a rolling update for all webservers serially (one at a time).
 # Change the value of serial: to adjust the number of server to be updated.
-#
+# 
 # The three roles that apply to the webserver hosts will be applied: web
 
 - hosts: tag_ansible_group_windows_webservers
@@ -24,7 +24,7 @@
       state: 'absent'
 
   roles:
-#  - iis 
+#  - iis
   - web
 
   # These tasks run after the roles:
