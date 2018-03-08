@@ -3,5 +3,6 @@
 my-loadbal: name
 my-location: eastus
 my-resgr: groupName
-
+windows_dbservers: your.db.servers
+windows_webservers: your.web.servers
 tower_user_name: admin
