@@ -1,0 +1,15 @@
+---
+## This playbook deploys the whole application stack in this site.
+#
+# Configure and deploy database servers.
+- hosts: {{windows_dbservers}}
+  connection: winrm
+
+  vars:
+    ansible_ssh_port : 5986
+
+  roles:
+  - mssql
+
+  tags:
+  - db
